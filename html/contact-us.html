@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<title>联系我们</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+<style type="text/css">
+</style>
+</head>
+<body>
+<header>
+	<div class="head">
+		<div class="logo pull-left">
+			<img src="../images/logo.png" />
+		</div>
+		<ul class="nav pull-right">
+			<li class=""><a href="../index.html">首页</a></li>
+			<li class=""><a href="about.html">关于我们</a></li>
+			<li class=""><a href="plan.html">产品与解决方案</a></li>
+			<li class=""><a href="recruit.html">招贤纳士</a></li>
+			<li class="active"><a href="contact-us.html">公司动态</a></li>
+		</ul>
+	</div>
+</header>
+<div class="main-warp min-width" style="background-image:url(../images/banner1.jpg) ;background-position: center center;">
+</div>
+<div class="main-warp first border-box">
+	<div class="main">
+		<div class="main-title">
+			<h2>联系方式</h2>
+			<div class="line"></div>
+			<p class="gary">Contact information</p>
+		</div>
+		<ul class="technology">
+			<li>
+				<img src="../images/1.png"/>
+				<h3>招商合作</h3>
+				<p class="gary">
+					招商合作电话：0755-26606921<br />
+					联系人：刘先生<br />
+					联系地址：深圳市南山区科技园高新南一道中国科技开发院孵化楼518室
+				</p>
+			</li>
+			<li>
+				<img src="../images/33.png"/>
+				<h3>客服服务</h3>
+				<p class="gary">
+					客服电话：4008-227-278<br />
+					联系人：张小姐<br />
+					客服邮箱：tel@yoomaa.cn<br />
+					联系地址：深圳市南山区科技园高新南一道中国科技开发院孵化楼518室<br />
+					呼信助手：呼信APP内打开呼信助手，可与客服交流咨询。
+				</p>
+			</li>
+			<li>
+				<img src="../images/35.png"/>
+				<h3>人力资源</h3>
+				<p class="gary">
+					HR简历邮箱：houdy@yoomaa.cn<br />
+					联系人：侯先生<br />
+					联系地址：深圳市南山区科技园高新南一道中国科技开发院孵化楼518室
+				</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="main-warp three bg-gray border-box">
+	<div class="main">
+		<div class="main-title">
+			<h2>地理位置</h2>
+			<div class="line"></div>
+			<p class="gary">Loaction</p>
+		</div>
+		<div class="map-box radius">
+			<div class="radius" id="allmap">
+						
+			</div>
+		</div>
+		<p class="address">公司地址：<span class="gary">深圳市南山区科技园高新南一道中国科技开发院孵化楼518室</span></p>
+	</div>
+</div>
+<footer>
+	<div class="footer-warp">
+		<div class="footer">
+			<div class="footer-logo">
+				<img src="../images/footer-logo.png" />
+			</div>
+			<ul class="">
+				<li><a href="http://huxin.biz/open">开放平台</a></li>
+				<li><a href="contact-us.html">联系我们</a></li>
+			</ul>
+			<div class="code">
+				<img src="../images/code.png" alt="" />
+				<p>下载呼信APP</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		Copyright © 2016 &nbsp;&nbsp; 深圳有麦科技有限公司 &nbsp;&nbsp; 粤ICP备16000029号-1
+	</div>
+</footer>
+</body>
+</html>
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=XmRVW7hcwoFsVdWkKWIRMXlTG1h3RV4i"></script>
+<script type="text/javascript">
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(113.959101,22.543625);//公司经纬度坐标
+	map.centerAndZoom(point,16);
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+	map.addControl(top_left_navigation); //添加地图缩放控件
+	map.enableScrollWheelZoom(true);   //开启鼠标滚轮缩放
+	var marker = new BMap.Marker(point);//创建标注
+	map.addOverlay(marker);    // 将标注添加到地图中  
+</script>

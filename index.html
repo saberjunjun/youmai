@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>有麦科技</title>
+    <meta name="author" content="有麦科技有限公司" />
+    <meta name="description" content="" />
+    <meta name="keywords"  content="" />
+    <meta name="Resource-type" content="Document" />
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="cache-control" content="no-cache" /> 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/index.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/jquery.fullpage.min.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="css/mobile-index.css">
+    <style>
+        #fp-nav ul li a span, .fp-slidesNav ul li a span{
+            background-color: #58cef5;
+        }
+    </style>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script>
+	    var w = document.documentElement.clientWidth;
+	    if(w >= 1000){
+	    	//设置html字体大小
+	    	(function (doc, win) {
+		        var docEl = doc.documentElement,
+		            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		            recalc = function () {
+		                var clientWidth = docEl.clientWidth;
+		                if (!clientWidth) return;
+		                docEl.style.fontSize = 2 * (clientWidth / 192) + 'px';
+		            };
+		        if (!doc.addEventListener) return;
+		        win.addEventListener(resizeEvt, recalc, false);
+		        doc.addEventListener('DOMContentLoaded', recalc, false);
+		    })(document, window);
+		    //动态加载插件js
+	    	var head = document.getElementsByTagName("head")[0];
+	    	var script = document.createElement("script");
+	    	script.src = 'js/jquery.fullpage.min.js';
+	    	head.appendChild(script);
+	    }else{
+	    	//根据移动端大小设置html字体大小
+	    	var width = document.documentElement.clientWidth/3.2;
+	    	console.log(width);
+			document.getElementsByTagName('html')[0].style.fontSize = width+'px';
+	    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo pull-left">
+                <img src="images/logo.png" /><span>呼信</span>
+            </div>
+            <ul class="nav pull-right">
+                <li class="active"><a href="">首页</a></li>
+                <li><a href="html/about.html">关于<span>我们</span></a></li>
+                <li><a href="html/download.html">下载</a></li>
+                <li><a href="http://biz.ihuxin.net/home/login">商家<span>登录</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="fullpage">
+        <!--第一屏-->
+        <div class="section" id="section0">
+            <div class="slide">
+                <div class="content">
+					<h1>HUXIN</h1>
+					<p>让打电话更好玩</p>
+                </div>
+				<div class="section0-square">
+					<img class="section0-heart" src="images/heart.png" alt="心跳图"/>
+					<div class="selphone">
+						<video>
+						  <source src="video.mp4" type="video/mp4"/>
+						</video>
+					</div>
+				</div>
+            </div>
+        </div>
+        <!--第二屏-->
+        <div class="section" id="section1">
+            <div class="slide">
+                <div class="content">
+					<h2>新潮电话，<i>秀</i>出自我</h2>
+					<p>玩转通话秀，你负责颜值爆表，我负责昭告天下</p>
+                </div>
+				<div class="section1-people">
+					<img src="images/music.png" class="section1-people-music" alt="音乐女孩"/>
+					<img src="images/sport.png" class="section1-people-sport" alt="羽毛球运动"/>
+					<img src="images/maxsport.png" class="section1-people-maxsport" alt="滑板运动"/>
+					<img src="images/photo.png" class="section1-people-photo" alt="摄影男孩"/>
+				</div>
+            </div>
+        </div>
+        <!--第三屏-->
+        <div class="section" id="section2">
+            <div class="slide">
+				<div class="main section2-main">
+					<div class="section2-main-index">
+						<p>01</p>
+					</div>
+				</div>
+				<div class="section2-content">
+					<img width="100%" src="images/section2-selphone.png" alt=""/>
+					<div class="content">
+						<h2>约伴聚会，一步<i>到位</i></h2>
+						<p>通话中一键发送位置，精准定位，优化路线</p>
+                	</div>
+				</div>
+            </div>
+        </div>
+        <!--第四屏-->
+        <div class="section" id="section3">
+            <div class="slide">
+				<div class="main section3-main">
+					<div class="section2-main-index">
+						<p>02</p>
+					</div>
+				</div>
+				<div class="section2-content section3-content">
+					<img width="100%" src="images/section3-selphone.png" alt=""/>
+					<div class="content">
+						<h2>电话联系，一<i>拍</i>即合</h2>
+						<p>通话也能随手拍照共享,减少无用沟通</p>
+                	</div>
+				</div>
+            </div>
+        </div>
+        <!--第五屏-->
+        <div class="section" id="section4">
+            <div class="slide">
+				<div class="main section2-main">
+					<div class="section2-main-index">
+						<p>03</p>
+					</div>
+				</div>
+				<div class="section2-content">
+					<img width="100%" src="images/section4-selphone.png" alt=""/>
+					<div class="content">
+						<h2>情感交流，一<i>点</i>就通</h2>
+						<p>发送逗趣表情助你，聊天畅通无阻</p>
+                	</div>
+				</div>
+            </div>
+        </div>
+        <!--第六屏-->
+        <div class="section" id="section5">
+            <div class="slide">
+				<div class="main section3-main">
+					<div class="section2-main-index">
+						<p>04</p>
+					</div>
+				</div>
+				<div class="section2-content section3-content">
+					<img width="100%" src="images/section5-selphone.png" alt=""/>
+					<div class="content">
+						<h2>告别沉默，一<i>摇</i>就会</h2>
+						<p>轻轻一摇，化身段子手，撩哥撩妹不再尴尬</p>
+                	</div>
+				</div>
+            </div>
+        </div>
+        <!--第七屏-->
+        <div class="section" id="section6">
+            <div class="slide">
+				<div class="section6-quare"></div>
+				<div class="represent">
+					<img src="images/represent.png" width="100%" alt="代言"/>
+					<div class="content">
+						<h2><i>代言</i>商家，稳赚收益</h2>
+						<p>海量商家等你来代言，躺着也能赚收益</p>
+                	</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <script>
+	    window.onload=function(){
+	    	var w = document.documentElement.clientWidth;
+	    	if(w >= 1000){
+	    		$('#fullpage').fullpage({
+				anchors: ['page1', 'page2', 'page3','page4','page5','page6','page7'],
+				'css3':true,
+				'navigation':true,
+				'verticalCentered':false,
+				'scrollingSpeed':1500,
+				'afterLoad':function(anchorLink, index){
+					if(index == 1){
+						var video = document.getElementsByTagName("video")[0];
+						video.play();
+						$("#section0 .slide").addClass("move-right");
+					}
+					if(index == 2){
+						$("#section1 .slide").addClass("move-right");
+					}
+					if(index == 3){
+						$("#section2 .slide").addClass("move-right");
+					}
+					if(index == 4){
+						$("#section3 .slide").addClass("move-right");
+					}
+					if(index == 5){
+						$("#section4 .slide").addClass("move-right");
+					}
+					if(index == 6){
+						$("#section5 .slide").addClass("move-right");
+					}
+					if(index == 7){
+						$("#section6 .slide").addClass("move-right");
+					}
+				},
+				'onLeave':function(index){
+					if(index == 1){
+						$("#section0 .slide").removeClass("move-right");
+					}
+					if(index == 2){
+						$("#section1 .slide").removeClass("move-right");
+					}
+					if(index == 3){
+						$("#section2 .slide").removeClass("move-right");
+					}
+					if(index == 4){
+						$("#section3 .slide").removeClass("move-right");
+					}
+					if(index == 5){
+						$("#section4 .slide").removeClass("move-right");
+					}
+					if(index == 6){
+						$("#section5 .slide").removeClass("move-right");
+					}
+					if(index == 7){
+						$("#section6 .slide").removeClass("move-right");
+					}
+				}
+			});
+	    	}
+	    }
+    </script>
+</body>
+</html>

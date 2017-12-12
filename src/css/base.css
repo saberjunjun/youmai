@@ -1,0 +1,74 @@
+/*-------重置格式化 CSS------*/
+@charset "utf-8";
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p,dl, dt, dd, ul, ol, li,
+ button, input{
+	margin: 0;
+    padding: 0;
+}
+/* 重置默认字体 */
+body {
+  font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  min-width: 1000px;
+}
+/*去掉列表默认样式*/
+ol,ul {
+	list-style:none;
+} 
+img {vertical-align:top; border:0 none;}/*图片去边框并居中*/
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+} 
+/* 重置 form */
+form {
+	padding:0px;
+	margin:0px;
+}
+button, input, select, textarea {
+	outline: none;
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+/*定义链接、已访问过的链接、鼠标停在上方时、点下鼠标时"的样式。*/
+a:link, a:visited {
+	text-decoration: none;
+	color: #a8afb8;
+}
+a:hover, a:active {
+	text-decoration: none;
+	border: none;
+}
+.clearfix:after{
+  	content: ""; 
+	display: block; 
+  	height: 0; 
+  	clear: both; 
+  	visibility: hidden;  
+}
+.clearfix {
+  /* 触发 hasLayout */ 
+	  zoom: 1; 
+}
+.none{
+	display:none;
+}
+.block {
+	display:block;
+}
+.blod{
+	font-weight: 600;
+}
+/*右浮动*/
+.pull-right{
+	float: right;
+}
+/*左浮动*/
+.pull-left{
+	float: left;
+}
+.pointer{
+	cursor: pointer;
+}

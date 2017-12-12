@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+<style type="text/css">
+.information li {
+    margin: 0 0 50px 24px;
+}
+</style>
+</head>
+<body>
+<div class="main-warp bg-gray border-box">
+	<div class="main">
+		<div class="news-nav">
+			<input type="button" class="news-active" value="公司动态"/>
+			<input type="button" value="行业资讯"/>
+			<input type="button" value="活动推广"/>
+		</div>
+		<ul class="information clearfix">
+			<li>
+				<img src="../images/6.png" alt="" />
+				<div class="news-title">
+					<p>“呼信”创新通讯应用场 景引媒体热议</p>
+					<p class="gary news-time">2016-6-20</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/7.png" alt="" />
+				<div class="news-title">
+					<p>呼信：引领人与人沟通的科技变革</p>
+					<p class="gary news-time">2016-6-20</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/8.png" alt="" />
+				<div class="news-title">
+					<p>惊爆！围观那些奇葩赚钱方式</p>
+					<p class="gary news-time">2016-6-20</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/9.png" alt="" />
+				<div class="news-title">
+					<p>惊爆！围观那些奇葩赚钱方式</p>
+					<p class="gary news-time">2016-6-20</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/8.png" alt="" />
+				<div class="news-title">
+					<p>惊爆！围观那些奇葩赚钱方式</p>
+					<p class="gary news-time">2016-6-20</p>
+				</div>
+			</li>
+			<li>
+				<img src="../images/9.png" alt="" />
+				<div class="news-title">
+					<p>惊爆！围观那些奇葩赚钱方式</p>
+					<p class="gary news-time">2016-6-20</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.news-nav input').click(function(){
+		$(this).addClass('news-active').siblings().removeClass('news-active');
+	});
+</script>
